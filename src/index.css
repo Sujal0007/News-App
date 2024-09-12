@@ -105,6 +105,7 @@ body.dark-theme .fa-sun {
 .news-list ul {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-around;
   gap: 1rem;
   list-style: none;
@@ -112,20 +113,19 @@ body.dark-theme .fa-sun {
   margin: 0;
 }
 .news-list ul img {
-  width: 100%;
-  height: auto;
-  max-width: 25vw;
+  height: 47vh;
+  width: 25vw;
 }
 .news-list ul li {
   width: 95vw;
-  max-width: 600px; /* Limits the width of each news item */
+  height: 50vh;
+  /* max-width: 600px; Limits the width of each news item */
   background-color: white;
   border-radius: 5px;
   color: black;
   padding: 10px;
   position: relative;
   display: flex;
-  flex-direction: column;
 }
 .news-list ul li p {
   margin-top: 1rem;
@@ -199,13 +199,24 @@ body.dark-theme .fa-sun {
   .searchbar-div input {
     width: 90%;
   }
-
-  .news-list ul img {
-    max-width: 90vw;
+  .news-list  {
+    height: auto;
   }
 
+  .news-list ul img {
+    height: 20vh;
+    width: 85vw;
+  }
+  .news-list ul li button{
+    margin-top: 0.3rem;
+  }
+  .news-list ul li p{
+    margin-top: 0.5rem;
+  }
   .news-list ul li {
     width: 90vw;
+    height: 53vh;
+    flex-direction: column;
   }
 
   .article-detail h1 {

@@ -6,35 +6,35 @@ const NewsList = () => {
 //   console.log(state);
   const { filteredNews } = state;
   const [selectedArticle, setSelectedArticle] = useState(null);
-  // const [page , setPage] = useState(1);
-  // const [loading , setLoading] = useState(false);
+  const [page , setPage] = useState(1);
+  const [loading , setLoading] = useState(false);
 
-  // const fetchMoreNews = ()=>{
-  //   setLoading(true);
-  //   // console.log('Fetching');
-  //   fetch(`/api/news?page=${page}`)
-  //   .then((response) => response.json())
-  //   .then((data) => {
-  //     // console.log('Data', data); 
-  //     dispatch({type:"Set_news" , news:[...filteredNews , ...data.news]})
-  //     setPage(page + 1);
-  //     setLoading(false)
-  //     // console.log("calling")
-  //   })
-  // }
+  const fetchMoreNews = ()=>{
+    setLoading(true);
+    // console.log('Fetching');
+    fetch(`/api/news?page=${page}`)
+    .then((response) => response.json())
+    .then((data) => {
+      // console.log('Data', data); 
+      dispatch({type:"Set_news" , news:[...filteredNews , ...data.news]})
+      setPage(page + 1);
+      setLoading(false)
+      // console.log("calling")
+    })
+  }
 
-  // const handleScroll = ()=>{
-  //   // console.log('Scroll');
-  //   if(window.innerHeight + window.scrollY >= document.body.scrollHeight - 50
-  //   ){
-  //     fetchMoreNews()
-  //   }
-  // }
-  // useEffect(()=>{
-  //   window.addEventListener("scroll" , handleScroll)
+  const handleScroll = ()=>{
+    // console.log('Scroll');
+    if(window.innerHeight + window.scrollY >= document.body.scrollHeight - 50
+    ){
+      fetchMoreNews()
+    }
+  }
+  useEffect(()=>{
+    window.addEventListener("scroll" , handleScroll)
 
-  //   return ()=> window.removeEventListener("scroll" , handleScroll);
-  // },[loading , filteredNews , page])
+    return ()=> window.removeEventListener("scroll" , handleScroll);
+  },[loading , filteredNews , page])
 
   const handlereadMore = (article)=>{
     setSelectedArticle(article);

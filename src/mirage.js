@@ -67,7 +67,7 @@ export function makeserver(){
             }),
         },
         seeds(server){
-            server.createList('news' , 100)
+            server.createList('news' , 20)
         },
 
         routes() {

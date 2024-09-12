@@ -122,12 +122,7 @@ hr{
   font-weight: bold;
 }
 .searchbar-div input {
-  padding: 1rem;
-  width: 70%;
-  border-radius: 1rem;
-  border: none;
-  background-color: rgb(243, 237, 237);
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 0.3rem;
 }
 .carousel{
   display: flex;

@@ -1,5 +1,6 @@
 import  { useContext , useEffect, useState } from 'react';
 import { NewsContext } from './NewsContext';
+import Carousel from './Carousel';
 
 const NewsList = () => {
   const { state , dispatch } = useContext(NewsContext);
@@ -61,6 +62,7 @@ const NewsList = () => {
             <h1 style={{color:"red" , fontSize:"50px" , borderBottom:"2px solid black"  , margin:"1rem"}}>News <span style={{color:"black" , fontSize:"40px"}}>World</span></h1>
         </div>
     <div className="news-list">
+      <Carousel/>
       <ul>
         {filteredNews.map((article) => (
           <li>

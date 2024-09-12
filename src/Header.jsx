@@ -14,6 +14,7 @@ export default function Header(){
       <div >
       <div className="icons"><i class="fa-solid fa-bars"></i>
       <i class="fa-solid fa-magnifying-glass"></i>
+      {/* <Searchbar/> */}
       </div>
      
       

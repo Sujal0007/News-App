@@ -14,7 +14,7 @@ export default function App(){
       <Header/>
       <CategoriesNav />
       {/* <Searchbar/> */}
-      <Carousel/>
+      {/* <Carousel/> */}
       <NewsList/>
       <Footer/>
     </NewsProvider>

@@ -58,11 +58,12 @@ const NewsList = () => {
 
   return (
     <>
-    <div className="title">
-            <h1 style={{color:"red" , fontSize:"50px" , borderBottom:"2px solid black"  , margin:"1rem"}}>News <span style={{color:"black" , fontSize:"40px"}}>World</span></h1>
-        </div>
+    
     <div className="news-list">
       <Carousel/>
+      <div className="title">
+            <h1 style={{color:"red" , fontSize:"50px" , borderBottom:"2px solid black"  , margin:"1rem"}}>News <span style={{color:"black" , fontSize:"40px"}}>World</span></h1>
+        </div>
       <ul>
         {filteredNews.map((article) => (
           <li>

@@ -4,6 +4,8 @@ import CategoriesNav from "./CategoryNavbar";
 import { NewsProvider } from "./NewsContext";
 import Searchbar from "./Searchbar";
 import NewsList from "./Newscontainer";
+import Footer from "./Footer";
+import Carousel from "./Carousel";
 
 
 export default function App(){
@@ -11,8 +13,10 @@ export default function App(){
     <NewsProvider>
       <Header/>
       <CategoriesNav />
-      <Searchbar/>
+      {/* <Searchbar/> */}
+      <Carousel/>
       <NewsList/>
+      <Footer/>
     </NewsProvider>
     
   )

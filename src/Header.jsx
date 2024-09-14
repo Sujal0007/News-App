@@ -13,7 +13,8 @@ export default function Header(){
     <header className="header">
       <div >
       <div className="icons"><i class="fa-solid fa-bars"></i>
-      <i class="fa-solid fa-magnifying-glass"></i>
+      {/* <i class="fa-solid fa-magnifying-glass"></i> */}
+      <Searchbar/>
       {/* <Searchbar/> */}
       </div>
      

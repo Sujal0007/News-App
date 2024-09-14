@@ -205,6 +205,11 @@ hr{
   color: red;
   transition: 0.5s;
 }
+.searchbar-div input{
+  border: none;
+  background-color: aliceblue;
+}
+
 
 .detail-div {
   margin-left: 1rem;
@@ -222,10 +227,12 @@ hr{
   margin: 0 auto;
 }
 
+
 .footer-logo img {
   max-width: 100px;
   margin-bottom: 20px;
   background-color: white;
+  padding: 5px;
 }
 
 .footer-nav {
